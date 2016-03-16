@@ -1,0 +1,106 @@
+@import "variables";
+@import "mixins";
+
+*{
+  box-sizing: border-box;
+  // border: solid black 1px;
+}
+
+body{
+  padding: 2%;
+}
+
+section{
+  width: 80%;
+  margin: auto;
+}
+
+section > aside{
+  width: $asidewidth;
+  color: $bluethemelight;
+  float: left;
+  text-align: right;
+
+  .date{
+    font-family: $themefont;
+    font-size: .8vw;
+    margin: 6% 0 0 0;
+    padding-right: 5%;
+  }
+
+  .time{
+    font-family: $themefont;
+    font-size: 2.5vw;
+    margin: 6% 0 0 0;
+    padding-right: 5%;
+  }
+}
+
+.entry{
+  width: $entrywidth;
+  float: left;
+  position: relative;
+  // background-color: #cccccc;
+}
+
+
+article{
+  width: $articlewidth;
+  position: relative;
+  left: 1.6*$iconwidth;
+  font-family: $themefont;
+  background-color: $bluethemelight;
+  color: white;
+  margin: $articlemargin 0;
+  padding: 2% 3%;
+  border-radius: 5px;
+}
+
+.icon{
+  background-color: $bluethemedark;
+  border: solid $bluethememid 8px;
+  @include circle($iconwidth);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+
+  .fa{
+    font-size: 2em;
+    color: white;
+    padding-top: 17%;
+  }
+}
+
+.line{
+  border: black solid 1;
+  background-color: $bluethememid;
+  width: $linewidth;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: ($iconwidth/2)-($linewidth/2);
+}
+
+.arrow{
+  background-color: $bluethemelight;
+  @include square($arrowsize);
+  position: absolute;
+  transform: rotate(45deg);
+  left: -$arrowsize/4;
+  top: ($iconwidth/2)-($arrowsize/2)-$articlemargin;
+}
+
+h2{
+  font-size: 1.9em;
+  font-weight: bold;
+}
+
+.articletext{
+  line-height: 1.5;
+}
+
+hr{
+  border: 0;
+  border-top: $bluethememid solid 0.5px
+}
