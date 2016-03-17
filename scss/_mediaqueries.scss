@@ -1,0 +1,89 @@
+@media screen and (max-width: 500px) {
+  .vertline{
+    display: none;
+  }
+  .icon{
+    top: 12px;
+    left: 8px;
+    // display: none;
+  }
+  .arrow{
+    display: none;
+  }
+  .post{
+    width: 90%;
+  }
+  .entry{
+    width: 100%;
+  }
+  article{
+    left: 0;
+    width: 100%;
+    padding: 7%;
+    font-size: .9em;
+  }
+  h2{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    margin-top: $headermargin;
+    text-align: right;
+  }
+  .datetime{
+    .date{
+      margin: 0;
+      font-size: .75em;
+      position: absolute;
+      top: 20px;
+      right: 0;
+      color: white;
+      z-index: 1;
+    }
+    .time{
+      margin: 0;
+      font-size: 1.5em;
+      position: absolute;
+      top: 38px;
+      right: 0;
+      color: white;
+      z-index: 1;
+
+
+    }
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+  .post{
+    width: 97%;
+  }
+  .datetime{
+    width: 0;
+  }
+  section{
+    width: 100%;
+  }
+  article{
+    width: 100%;
+  }
+  .datetime{
+    .date{
+      margin: 0;
+      font-size: .9em;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      color: white;
+      z-index: 1;
+    }
+    .time{
+      margin: 0;
+      font-size: 1.75em;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      color: white;
+      z-index: 1;
+    }
+  }
+}

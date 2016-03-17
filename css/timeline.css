@@ -150,7 +150,7 @@ footer {
     z-index: 1; } }
 @media screen and (min-width: 501px) and (max-width: 1000px) {
   .post {
-    width: 100%; }
+    width: 97%; }
 
   .datetime {
     width: 0; }
